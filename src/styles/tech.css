@@ -1,0 +1,132 @@
+.tech {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.tech .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech .images .desc {
+    display: none;
+}
+
+.tech .images .mob {
+    max-width: 100%;
+    min-width: 100vw;
+}
+
+.tech .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.tech .list ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech .list ul li {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.tech .list ul li.active {
+    background-color: white;
+    color: #0B0D17;
+}
+
+.tech .para {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.tech .para h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+@media (min-width:400px) {
+    .tech .para {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width:768px) {
+    .tech .content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tech .images .mob {
+        display: none;
+    }
+
+    .tech .images {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+
+    .tech .images .desc {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .tech .info {
+        width: 60%;
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+    }
+
+    .tech .info .para {
+        padding: 0;
+        margin: 50px 0;
+        text-align: start;
+        margin-left: 30px;
+        width: 70%;
+    }
+
+    .tech .para h3 {
+        font-size: 4rem;
+    }
+
+    .tech .images {
+        order: 2;
+    }
+
+    .tech .list ul {
+        flex-direction: column;
+    }
+
+    .tech .list ul li {
+        width: 80px;
+        height: 80px;
+    }
+}

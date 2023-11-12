@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+
+
+
+
+.home {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.home .content {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .cir {
+    background-color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.home .right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.home .left {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.home .left:hover {
+    background-color: #979797;
+    cursor: pointer;
+}
+
+.home .first-p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: #D0D6F9;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 80px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.home .left p {
+    color: black;
+}
+
+.home .right :last-child {
+    width: 100%;
+    color: #D0D6F9;
+}
+
+
+
+@media (min-width: 400px) {
+    .home {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .home .left p {
+        color: black;
+    }
+
+    .home .content {
+        flex-direction: column;
+    }
+
+    .home .right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .home .left {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .home .first-p {
+        width: 100%;
+    }
+
+    .home .right :last-child {
+        width: 100%;
+        color: #D0D6F9;
+    }
+}
+
+@media (min-width:768px) {
+    .home {
+        background-image: url(../assets/home/background-home-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .home .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px;
+        align-items: center;
+    }
+
+    .home .right {
+        width: 50%;
+        text-align: start;
+    }
+
+
+
+    .home .left {
+        z-index: 0;
+        margin-top: 80px;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .cir {
+        background-color: white;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        z-index: 2;
+    }
+
+    .home .left p {
+        color: black;
+    }
+
+    .home .left:hover {
+        background-color: hsl(0, 0%, 59%, 50%);
+        cursor: pointer;
+    }
+
+    .home .first-p {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        color: #D0D6F9;
+        font-size: 1.2rem;
+    }
+
+    .home h1 {
+        font-size: 150px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: white;
+
+    }
+
+    .home .right :last-child {
+        width: 406px;
+        color: #D0D6F9;
+        text-align: start;
+    }
+}
